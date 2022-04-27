@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <!--
+        Author: Bryan Flores
+        Date: 11/8/2021
+    -->
+</head>
+<style>
+    /* included style in the HTML */
+    html {background-color: rgb(18, 57, 116);}
+    body {margin: 10em auto; width: 100%; max-width: 50%; max-height: 50%;}
+    h1 {color: azure; line-height: 2.5em; font-size: 4em; text-align: center;}
+    h2 {color:wheat; line-height: 2em;}
+    h3 {color: cadetblue; line-height: 1.5em;}
+    fieldset {background-color: white; line-height: 2.5em;}
+    div {background-color: white; line-height: 2em;}
+</style>
+<body>
+    <h1>Movie Search</h1>
+    <hr />
+    <h2>Search your movies here!</h2>
+    <fieldset id="search-form">
+        <label for="movie-search">Search the movie: </label> <br />
+            <input type="text" id="movie-search"/>
+            <button id="movie-text-button">Search</button>
+            <hr />
+        <label for="movie-dropdown">OR choose one in the field below</label> <br />
+            <select id="movie-dropdown" name="movie-dropdown">
+                <option value="&nbsp;"></option>
+                <option value="Star Wars">Star Wars</option>
+                <option value="The Empire Strikes Back">The Empire Strikes Back</option>
+                <option value="Return of the Jedi">Return of the Jedi</option>
+            </select>
+            <button id="movie-dropdown-button">Search</button>
+    </fieldset>
+    <br /><hr />
+    <h2>Your Search Results</h2>
+    <div id="info-results">
+        <h3>Title of the movie</h3>
+        <h4 id="movie-title"></h4> <hr>
+        <h3>Director of the movie</h3>
+        <h4 id="movie-director"></h4> <hr>
+        <h3>Plot of the movie</h3>
+        <h4 id="movie-plot"></h4> <hr>
+        <h3>Actors and actresses</h3>
+        <h4 id="movie-actors"></h4> <hr>
+        <h3>Movie Poster</h3>
+        <img id="movie-poster"/>
+    </div>
+
+<script src="MovieSearchScript.js"></script>
+</body>
+</html>
+    
